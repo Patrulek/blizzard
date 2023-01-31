@@ -132,23 +132,23 @@ type PvPLeaderboards struct {
 				ID   int    `json:"id"`
 				Slug string `json:"slug"`
 			} `json:"realm"`
-			Faction struct {
-				Type string `json:"type"`
-			} `json:"faction,omitempty"`
-			Rank                  int `json:"rank"`
-			Rating                int `json:"rating"`
-			SeasonMatchStatistics struct {
-				Played int `json:"played"`
-				Won    int `json:"won"`
-				Lost   int `json:"lost"`
-			} `json:"season_match_statistics"`
-			Tier struct {
-				Key struct {
-					Href string `json:"href"`
-				} `json:"key"`
-				ID int `json:"id"`
-			} `json:"tier,omitempty"`
 		} `json:"character"`
+		Faction struct {
+			Type string `json:"type"`
+		} `json:"faction,omitempty"`
+		Rank                  int `json:"rank"`
+		Rating                int `json:"rating"`
+		SeasonMatchStatistics struct {
+			Played int `json:"played"`
+			Won    int `json:"won"`
+			Lost   int `json:"lost"`
+		} `json:"season_match_statistics"`
+		Tier struct {
+			Key struct {
+				Href string `json:"href"`
+			} `json:"key"`
+			ID int `json:"id"`
+		} `json:"tier,omitempty"`
 	} `json:"entries"`
 }
 
