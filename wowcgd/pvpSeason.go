@@ -122,18 +122,9 @@ type PvPLeaderboards struct {
 		Type string `json:"type"`
 	} `json:"bracket"`
 	Entries []struct {
-		Faction struct {
-			Type string `json:"type"`
-		} `json:"faction,omitempty"`
-		Rank                  int `json:"rank"`
-		Rating                int `json:"rating"`
-		SeasonMatchStatistics struct {
-			Played int `json:"played"`
-			Won    int `json:"won"`
-			Lost   int `json:"lost"`
-		} `json:"season_match_statistics"`
-		Team struct {
+		Character struct {
 			Name  string `json:"name"`
+			ID    int    `json:"id"`
 			Realm struct {
 				Key struct {
 					Href string `json:"href"`
@@ -141,85 +132,23 @@ type PvPLeaderboards struct {
 				ID   int    `json:"id"`
 				Slug string `json:"slug"`
 			} `json:"realm"`
-			Crest struct {
-				Emblem struct {
-					ID    int `json:"id"`
-					Media struct {
-						Key struct {
-							Href string `json:"href"`
-						} `json:"key"`
-						ID int `json:"id"`
-					} `json:"media"`
-					Color struct {
-						Rgba struct {
-							R int     `json:"r"`
-							G int     `json:"g"`
-							B int     `json:"b"`
-							A float32 `json:"a"`
-						} `json:"rgba"`
-					} `json:"color"`
-				} `json:"emblem"`
-				Border struct {
-					ID    int `json:"id"`
-					Media struct {
-						Key struct {
-							Href string `json:"href"`
-						} `json:"key"`
-						ID int `json:"id"`
-					} `json:"media"`
-					Color struct {
-						Rgba struct {
-							R int     `json:"r"`
-							G int     `json:"g"`
-							B int     `json:"b"`
-							A float32 `json:"a"`
-						} `json:"rgba"`
-					} `json:"color"`
-				} `json:"border"`
-				Background struct {
-					Color struct {
-						Rgba struct {
-							R int     `json:"r"`
-							G int     `json:"g"`
-							B int     `json:"b"`
-							A float32 `json:"a"`
-						} `json:"rgba"`
-					} `json:"color"`
-				} `json:"background"`
-			} `json:"crest"`
-			Members []struct {
-				Character struct {
-					Name  string `json:"name"`
-					ID    int    `json:"id"`
-					Realm struct {
-						Key struct {
-							Href string `json:"href"`
-						} `json:"key"`
-						ID   int    `json:"id"`
-						Slug string `json:"slug"`
-					} `json:"realm"`
-					PlayableClass struct {
-						Key struct {
-							Href string `json:"href"`
-						} `json:"key"`
-						ID int `json:"id"`
-					} `json:"playable_class"`
-					PlayableRace struct {
-						Key struct {
-							Href string `json:"href"`
-						} `json:"key"`
-						ID int `json:"id"`
-					} `json:"playable_race"`
-				} `json:"character"`
-				SeasonMatchStatistics struct {
-					Played int `json:"played"`
-					Won    int `json:"won"`
-					Lost   int `json:"lost"`
-				} `json:"season_match_statistics"`
-				Rating int `json:"rating"`
-			} `json:"members"`
-			ID int `json:"id"`
-		} `json:"team,omitempty"`
+			Faction struct {
+				Type string `json:"type"`
+			} `json:"faction,omitempty"`
+			Rank                  int `json:"rank"`
+			Rating                int `json:"rating"`
+			SeasonMatchStatistics struct {
+				Played int `json:"played"`
+				Won    int `json:"won"`
+				Lost   int `json:"lost"`
+			} `json:"season_match_statistics"`
+			Tier struct {
+				Key struct {
+					Href string `json:"href"`
+				} `json:"key"`
+				ID int `json:"id"`
+			} `json:"tier,omitempty"`
+		} `json:"character"`
 	} `json:"entries"`
 }
 
