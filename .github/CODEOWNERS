@@ -2,4 +2,5 @@
 # Each line is a file pattern followed by one or more owners.
 
 # These owners will be the default owners for everything in the repo.
-* @FuzzyStatic
+* @FuzzyStatic - until Commit: 0b3ae00c83f5843b9159f8af8a218208956f4c5d
+* @Patrulek - since Commit: da300ca8087ab436e57565744add5bf45c5e5511
