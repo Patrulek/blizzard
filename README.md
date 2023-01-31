@@ -1,6 +1,6 @@
 # blizzard
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/Patrulek/blizzard/v3.svg)](https://pkg.go.dev/github.com/Patrulek/blizzard/v3) [![Go Report Card](https://goreportcard.com/badge/github.com/Patrulek/blizzard)](https://goreportcard.com/report/github.com/Patrulek/blizzard)
+[![Go Reference](https://pkg.go.dev/badge/github.com/Patrulek/blizzard/v3.svg)](https://pkg.go.dev/github.com/Patrulek/blizzard/v3) [![Go Report Card](https://goreportcard.com/badge/github.com/Patrulek/blizzard/v3)](https://goreportcard.com/report/github.com/Patrulek/blizzard/v3)
 
 > This is a Go client library for gathering [Blizzard API reference](https://develop.battle.net/documentation/api-reference) data
 
@@ -147,7 +147,7 @@ fmt.Printf("%+v\n", dat)
 
 ## Authorization for User Data
 
-To use the `UserInfoHeader` or `WoWUserCharacters` functions to acquire data about other users (and not your own), you must use the OAuth2 redirect method to get an authorized token. This is useful for building websites that display more personal or individualized data. The following code snippet is an example on how to acquire authorized tokens for other users. A working example can be found in the [examples/authCodeFlow](https://github.com/Patrulek/blizzard/tree/master/examples/authCodeFlow) directory. Before the redirect URI will work, you will have to add it to your client settings at <https://develop.battle.net/access>:
+To use the `UserInfoHeader` or `WoWUserCharacters` functions to acquire data about other users (and not your own), you must use the OAuth2 redirect method to get an authorized token. This is useful for building websites that display more personal or individualized data. The following code snippet is an example on how to acquire authorized tokens for other users. A working example can be found in the [examples/authCodeFlow](https://github.com/Patrulek/blizzard/v3/tree/master/examples/authCodeFlow) directory. Before the redirect URI will work, you will have to add it to your client settings at <https://develop.battle.net/access>:
 
 ```go
 package main
@@ -159,8 +159,8 @@ import (
   "log"
   "net/http"
 
-  "github.com/Patrulek/blizzard"
-  "github.com/Patrulek/blizzard/oauth"
+  "github.com/Patrulek/blizzard/v3"
+  "github.com/Patrulek/blizzard/v3/oauth"
   "golang.org/x/oauth2"
 )
 
@@ -270,7 +270,7 @@ fmt.Println(header.LastModified)
 
 ## Documentation
 
-See the [Blizzard API reference](https://develop.battle.net/documentation/guides) and the [Go reference](https://pkg.go.dev/github.com/Patrulek/blizzard/v2) for all the different datasets that can be acquired.
+See the [Blizzard API reference](https://develop.battle.net/documentation/guides) and the [Go reference](https://pkg.go.dev/github.com/Patrulek/blizzard/v3) for all the different datasets that can be acquired.
 
 ## Special Thanks
 
