@@ -7,8 +7,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/FuzzyStatic/blizzard/v2"
-	"github.com/FuzzyStatic/blizzard/v2/wowsearch"
+	"github.com/Patrulek/blizzard/v2"
+	"github.com/Patrulek/blizzard/v2/wowsearch"
 )
 
 var (

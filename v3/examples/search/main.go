@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/FuzzyStatic/blizzard/v3"
-	"github.com/FuzzyStatic/blizzard/wowsearch"
+	"github.com/Patrulek/blizzard/v3"
+	"github.com/Patrulek/blizzard/wowsearch"
 )
 
 var (

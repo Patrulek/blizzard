@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/FuzzyStatic/blizzard/wowgd"
-	"github.com/FuzzyStatic/blizzard/wowsearch"
+	"github.com/Patrulek/blizzard/wowgd"
+	"github.com/Patrulek/blizzard/wowsearch"
 )
 
 // WoWAchievementCategoriesIndex returns an index of achievement categories.
